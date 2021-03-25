@@ -1,24 +1,17 @@
 
 
-.QuizListItem.container{
-    width: 1000px;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-}
-
-.QuizListItem.container .card{
+.card{
     position: relative;
     cursor: pointer;
 }
 
-.QuizListItem.container .card .face{
+.card .face{
     width: 300px;
     height: 200px;
     transition: 0.5s;
 }
 
-.QuizListItem.container .card .face.face1{
+.card .face.face1{
     position: relative;
     background: #333;
     display: flex;
@@ -28,25 +21,25 @@
     transform: translateY(100px);
 }
 
-.QuizListItem.container .card:hover .face.face1{
+.card:hover .face.face1{
     background: #ff0057;
     transform: translateY(0);
 }
 
-.QuizListItem.container .card .face.face1 .content{
+.card .face.face1 .content{
     opacity: 0.2;
     transition: 0.5s;
 }
 
-.QuizListItem.container .card:hover .face.face1 .content{
+.card:hover .face.face1 .content{
     opacity: 1;
 }
 
-.QuizListItem.container .card .face.face1 .content img{
+.card .face.face1 .content img{
     max-width: 100px;
 }
 
-.QuizListItem.container .card .face.face1 .content h3{
+.card .face.face1 .content h3{
     margin: 10px 0 0;
     padding: 0;
     color: #fff;
@@ -54,7 +47,7 @@
     font-size: 1.5em;
 }
 
-.QuizListItem.container .card .face.face2{
+.card .face.face2{
     position: relative;
     background: #fff;
     display: flex;
@@ -66,16 +59,16 @@
     transform: translateY(-100px);
 }
 
-.QuizListItem.container .card:hover .face.face2{
+.card:hover .face.face2{
     transform: translateY(0);
 }
 
-.QuizListItem.container .card .face.face2 .content p{
+.card .face.face2 .content p{
     margin: 0;
     padding: 0;
 }
 
-.QuizListItem.container .card .face.face2 .content a{
+.card .face.face2 .content a{
     margin: 15px 0 0;
     display:  inline-block;
     text-decoration: none;
@@ -85,7 +78,7 @@
     border: 1px solid #333;
 }
 
-.QuizListItem.container .card .face.face2 .content a:hover{
+.card .face.face2 .content a:hover{
     background: #333;
     color: #fff;
 }
