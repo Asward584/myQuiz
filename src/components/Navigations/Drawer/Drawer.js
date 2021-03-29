@@ -25,7 +25,6 @@ class Drawer extends Component {
     if (!this.props.isOpen) {
       cls.push(styles.close);
     }
-    console.log(cls);
     return (
       <React.Fragment>
         <nav className={cls.join(' ')}>
