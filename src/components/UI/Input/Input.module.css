@@ -1,0 +1,22 @@
+
+.input {
+	background-color: #fff;
+	border: none;
+	padding: 0.9rem 0.9rem;
+	margin: 0.5rem 0;
+	width: 100%;
+}
+.error{
+	padding: 0px 0px;
+	margin: 0px 0px;
+	width: 100%;
+	text-align: left;
+	color:red;
+}
+.invalid{
+	border: 2px solid #CD5C5C;
+	padding: 0.9rem 0.9rem;
+	margin: 0.5rem 0 0 0;
+	width: 100%;
+
+}
