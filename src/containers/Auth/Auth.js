@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import styles from './Auth.module.css';
 import Form from '../../components/UI/Form/Form';
-import Input from '../../components/UI/Input/Input';
 import is from "is_js"
 import Button from '../../components/UI/Button/Button';
 
 class Auth extends Component {
   state = {
+    isFormValid : false,
     formControl: {
       email: {
         value: '',
@@ -74,8 +74,13 @@ class Auth extends Component {
     control.touched = true;
     control.valid = this.controlValidator(value, control.validation)
     formControl[controlName] = control;
+    let isFormValid = true;
+    Object.keys(formControl).forEach(name =>{
+      isFormValid = formControl[name].valid && isFormValid
+    })
     this.setState({ 
       formControl,
+      isFormValid
     })
 
 
@@ -120,7 +125,7 @@ class Auth extends Component {
                   styles['overlay__panel'] + ' ' + styles['overlay--left']
                 }
               >
-                <Button onClick={this.signInButton} id="signIn">
+                <Button onClick={this.signInButton} id="signIn" >
                   Sign In
                 </Button>
               </div>
@@ -129,7 +134,7 @@ class Auth extends Component {
                   styles['overlay__panel'] + ' ' + styles['overlay--right']
                 }
               >
-                <Button onClick={this.signUpButton} id="signUp">
+                <Button onClick={this.signUpButton} id="signUp" >
                   Sign Up
                 </Button>
               </div>

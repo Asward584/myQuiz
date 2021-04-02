@@ -31,7 +31,7 @@ const Form = (props) => {
     <form action="#" className={styles.form} id={props.id}>
       <h2 className={styles['form__title']}>{text}</h2>
       {renderInputs(props, props.id)}
-      <Button onClick={props.onClick}>{text}</Button>
+      <Button onClick={props.onClick}  disabled={!props.state.isFormValid}>{text}</Button>
     </form>
   );
 };
