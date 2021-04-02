@@ -2,7 +2,7 @@
 .input {
 	background-color: #fff;
 	border: none;
-	padding: 0.9rem 0.9rem;
+	padding: 0.6rem 0.6rem;
 	margin: 0.5rem 0;
 	width: 100%;
 }
@@ -19,4 +19,9 @@
 	margin: 0.5rem 0 0 0;
 	width: 100%;
 
+}
+p {
+	text-align: left;
+	margin-bottom: 0;
+	font-weight: bold;
 }

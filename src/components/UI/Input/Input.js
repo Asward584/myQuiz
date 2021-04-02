@@ -2,14 +2,13 @@ import React from 'react';
 import styles from './Input.module.css';
 function isInvalid( valid, touched, shouldValidate ) {
   const b = !valid && shouldValidate && touched
- console.log('bbb',valid, shouldValidate,touched)
   return b
  
 }
 const Input = (props) => {
-  console.log('forms props ', props);
   return (
     <React.Fragment>
+      {props.label? <p>{props.label}</p> : null}
       <input
         type={props.type || 'text'}
         placeholder={props.placeholder}

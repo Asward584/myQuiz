@@ -49,4 +49,6 @@
 	padding: 0.9rem 4rem;
 	text-transform: uppercase;
 	transition: transform 80ms ease-in;
+   margin-right: 10px;
+ 
 }
